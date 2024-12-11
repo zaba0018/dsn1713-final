@@ -1,1 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&display=swap');
+$dark: #131921;
+$bg-dark: #131921;
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+#navbar-CTA {
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+#navbar-CTA button {
+    background-color: #FFE18D;
+    text-transform: none;
+    font-size: small;
+}
+
+.navbar-collapse #navbar-CTA {
+    display: none;
+}
+
+.dropdwon #user-menu {
+    display: none;
+}
+
+.user-account-icon-btn {
+    display: none;
+}
+#Hero-button{
+    background-color: #FF9900;
+    text-transform:none;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#hero-wrapper {
+    background-image: url(../images/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: right;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+#hero-wrapper::before {
+    background-size: 70%;
+    background: linear-gradient(to right, #1A2534 10%, transparent 80%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+footer a {
+    color: #FF9900;
+}
+
+.carousel-control-prev {
+    left: -70px;
+}
+.carousel-control-next {
+    right: -40px;
+}
+
+.footer-copyright-container {
+    justify-content: center;
+}
+@media (min-width: 992px) {
+    #navbar-CTA {
+        display: none;
+    }
+    .hero-text {
+        margin-left: 20rem;
+        padding-right:4rem;
+    }
+    .navbar-collapse {
+        justify-content: space-between;
+        margin-left: 15vw;
+    }
+    
+    .navbar-collapse #navbar-CTA {
+        display: flex;
+    }
+
+    .navbar-collapse #navbar-CTA button {
+        width: max-content;
+    }
+    #user-menu {
+        display: flex;
+    }
+
+    .user-account-icon-btn {
+        display: block;
+    }
+
+    .menu-account-btn {
+        display: none;
+    }
+
+    .form-control {
+        width: 30vw;
+    }
+}
+@media (max-width: 992px) {
+    #hero-wrapper::before {
+        background: linear-gradient(to bottom, #1A2534 30%, transparent 100%);
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+}
+    #hero-wrapper{
+        background-size: cover;
+    }
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Akatab';
+}
+h1{
+    font-weight: 800;
+
+}
+$font-family-sans-serif: "Akatab", sans-serif;
+
+a {
+    text-decoration: none;
+}
+.categories {
+    background-color: #FF9900;
+}
+a:hover {
+    color: white;
+}
+h3{
+    font-weight: 800;
+}
+.card{
+    margin: auto 4rem;
+}
+.carousel h2{
+    margin-left: 4rem;
+}
+.card-body {
+    background-color: #C4C4C4;
+}
+.navbar {
+   background-color: #131921; 
+}
+#navbar-container {
+    background-color: #131921;
+}
+#viewed h2 {
+    font-weight: 600;
+}
+#footer-list{
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+#footer-gray {
+    background-color: #4B4B4B;
+}
+#footer-text {
+    color: #FF9900;
+    margin-left: -150px;
+}
+.logo {
+    left: 60px;
+    top: 35px;
+}
+.material-icons-outlined {
+    color: #FF9900;
+}
+#price {
+    font-size: 2rem;
+    font-weight: 600;
+}
+#Account-Hero {
+    background-image: url(../images/coffee-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-outline-success{
+    border-color: #FF9900;
+    border-width: 0.25rem;
+    color: #FF9900;
+    
+}

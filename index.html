@@ -4,15 +4,409 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
+        <div class="px-5" id="navbar-container">
+            <nav class="navbar navbar-expand-lg navbar border-body">
+                <div class="container-fluid">
+                  <a class="navbar-brand mx-auto" href="#"><img src="images/amazon-logo-2.png" alt="amazon-logo" width="100"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-dark px-5" type="submit"><img src="images/magnifying-glass-solid.svg" alt="search" width="30px"></button>
+                    </form>
+                    <div>
+                        <a href="#" class="px-4"><img src="images/cart-shopping-solid.svg" alt="my cart" width="40px"></a>
+                        <a href="account.html" class=""><img src="images/user-solid.svg" alt="my account" width="30px"></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              </div>   
     </header>
     <main>
+      <div id="hero-wrapper" class="Hero mx-0 bg-dark container-fluid wrapper row">
+        <div class="hero-text">
+          <h1 class="text-light me-5 col-6 fs-1"> Unwrap Your Happiness: Discover Deals That Deliver!</h1>
+          <h2 class="text-light fs-5 fw-normal col-6 pt-2"> Explore a vast and diverse selection of items, perfect for any budget with a fast delivery!</h2>
+          <div>
+            <button id="Hero-button" type="button" class="btn btn-warning btn btn-outline-dark my-5 fs-5 px-4" >Shop Now</button>  
+          </div>
+        </div>
+      </div>
+      <div class="" id="categories">
+        <div class="container-fluid text-center">
+          <div class="row categories">
+            <div class="col py-2 border-end border-dark fw-bold ">
+              <a href="#" class="link-dark">All</a>
+            </div>
+            <div class="col py-2 border-end border-dark fw-bold">
+              <a href="#" class="link-dark">Fashion</a>
+            </div>
+            <div class="col py-2 border-end border-dark fw-bold">
+              <a href="#" class="link-dark">Books</a>
+            </div>
+            <div class="col py-2 border-end border-dark fw-bold">
+              <a href="#" class="link-dark">Sports</a>
+            </div>
+            <div class="col py-2 border-end border-dark fw-bold">
+              <a href="#" class="link-dark">video games</a>
+            </div>
+            <div class="col py-2 border-end border-dark fw-bold">
+              <a href="#" class="link-dark">Electronics</a>
+            </div>
+            <div class="col py-2 fw-bold">
+              <a href="#" class="link-dark">Pet Supplies</a>
+            </div>
+          </div>
+    </div>
+    </div>
+      <div class="B-T-N container-fluid row text-center my-5">
+      <div class="col">
+        <h3 class="mb-3">Best Sellers</h3>
+        <a href="#"><img src="images/amazon-prime-day.jpg" alt="Best sellers" height="250" width="250" class="rounded-circle object-fit-cover"></a>
+      </div>
+      <div class="col">
+        <h3 class="mb-3">Today's Deals</h3>
+        <a href="#"><img src="images/discount-sign-image.jpg" alt="Today's deal" height="250" class="rounded-circle object-fit-cover"></a>
+        </div>
+      <div class="col">
+        <h3 class="mb-3">New Arrivals</h3>
+        <a href="#"><img src="images/open-box-image.jpg" alt="New Arrivals" height="250" class="rounded-circle object-fit-cover"></a>
+      </div>
+      </div>
+      <div class=" bg-dark py-5 mb-5 container-fluid" id="recommendations">
+      <div class="mx-5 carousel">
+        <h2 class="mb-4 text-light"> Recommended for you</h2>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid flex row">
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/nintendo-switch-blue.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Nintendo switchTM Lite - Blue</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$259.96</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/jbl-headphones.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">JBL Tune 720BT</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$109.98</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/coffee-machine.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">PHILIPS EP2330/10 1.8 Liters Espresso Machine</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$549.99</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container-fluid flex row">
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/mini-fridge.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">AstroAI Mini Fridge, 4 Liter</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$64.99</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col px-0" style="width: 18rem;">
+                 <a href="product-page.html"><img src="images/black-dumbells.jpg" class="card-img-top" alt=""></a>
+                  <div class="card-body">
+                    <p class="card-text">CITY 1 Premium Pair of 2 Hex Dumbbells</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$89.98</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/beat-headphones.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Beats Studio ProBluetooth Noise Cancelling Headphones</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$279.95</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid flex row">
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/cat-litter-box-2.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Amazon Basics No-Mess Hooded Cat Litter Box</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$66.08</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/cat-litter-box-3.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Litter-Robot 3 Connect by Whisker</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$799.00</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card col px-0" style="width: 18rem;">
+                  <a href="product-page.html"><img src="images/cat-litter-box-6.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Meowant Stainless Steel Cat Litter Box</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$159.99</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+      </div>
+      <div id="viewed" class="mx-5">
+        <h2 class="ms-5 ps-3 mb-4">Recently viewed</h2>
+        <div class="d-flex row container-fluid mb-5">
+          <div class="card col px-0" style="width: 18rem;">
+            <a href="product-page.html"><img src="images/black-dumbells.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <p class="card-text">CITY 1 Premium Pair of 2 Hex Dumbbells
+              </p>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <div class="d-flex container-fluid justify-content-between px-3">
+                <p id="price">$89.98</p>
+                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card col px-0" style="width: 18rem;">
+            <a href="product-page.html"><img src="images/cat-litter-box-3.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <p class="card-text">Litter-Robot 3 Connect by Whisker</p>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <div class="d-flex container-fluid justify-content-between px-3">
+                <p id="price" class="">$799.00</p>
+                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="card col px-0" style="width: 18rem;">
+            <a href="product-page.html"><img src="images/nintendo-switch-blue.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <p class="card-text">Nintendo switchTM Lite - Blue</p>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <span class="material-icons-outlined star">star</span>
+              <div class="d-flex container-fluid justify-content-between px-3">
+                <p id="price">$259.99</p>
+                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+              </div>
+        </div>
+        </div>
+       </div>
+       <div class="d-flex row container-fluid">
+        <div class="card col px-0" style="width: 18rem;">
+          <a href="product-page.html"><img src="images/jbl-headphones.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <p class="card-text">JBL Tune 720BT</p>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <div class="d-flex container-fluid justify-content-between px-3">
+              <p id="price">$109.98</p>
+              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card col px-0" style="width: 18rem;">
+          <a href="product-page.html"><img src="images/coffee-machine.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <p class="card-text">PHILIPS EPS2330/10 1.8 Liters Espresso Machine</p>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <div class="d-flex container-fluid justify-content-between px-3">
+              <p id="price">$549.99</p>
+              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+            </div>
+
+          </div>
+        </div>
+        <div class="card col px-0" style="width: 18rem;">
+          <a href="product-page.html"><img src="images/beat-headphones.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <p class="card-text">Beats Studio ProBluetooth Noise Cancelling Headphonesx</p>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star">star</span>
+            <div class="d-flex container-fluid justify-content-between px-3">
+              <p id="price">$279.95</p>
+              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+            </div>
+      </div>
+      </div>
+     </div>
+      </div>
     </main>
     <footer>
+      <div class="bg-dark mt-5 text pt-5">
+        <div class="d-flex row text-light mx-5"  id="footer-list">
+          <div class="col col-lg-5">
+            <h5>Amazon Payment Products</h5>
+            <ul class="px-0">
+              <li>Amazon.ca Rewards Mastercard</li>
+              <li>Shop with Points</li>
+              <li>Reload Your Balance</li>
+              <li>Amazon Currency Converter</li>
+              <li>Gift Cards</li>
+              <li>Amazon Cash</li>
+            </ul>
+          </div>
+          <div class="col col-lg-5">
+            <h5>Make Money With Us</h5>
+            <ul class="px-0">
+              <li>Sell on Amazon </li>
+              <li>Supply On Amazon</li>
+              <li>Become An Affiliate</li>
+              <li>Protect & Build Your Brand </li>
+              <li>Sell on Amazon Handmade</li>
+              <li>Advertise Your Products</li>
+              <li>Independently Publish with Us</li>
+              <li>Host an Amazon Hubs</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Get to Know Us</h5>
+            <ul class="px-0">
+              <li>Careers</li>
+              <li>Amazon and Our Planet</li>
+              <li>Modern Slavery Statement</li>
+              <li>Investor Relations</li>
+              <li>Press Releases</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-3 position-relative" id="footer-gray">
+        <div class="d-flex mx-5 footer-copyright-container">
+          <a href="#" class="logo position-absolute"><img src="images/amazon-logo-2.png" alt="" class="me-5"   width="100px"></a>
+          <div class="row" id="footer-text">
+            <ul class="d-flex text-center justify-content-center">
+              <li class="pe-4"><a href="#">Conditions of Use</a></li>
+              <li class="pe-4"><a href="#">Privacy Notice</a></li>
+              <li class="pe-4"><a href="#">Interest-Based Ads</a></li>
+            </ul>
+            <p>© 1996-2024, Amazon.com, Inc. or its affiliate</p>
+          </div>
+  
+        </div>
+      </div>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
