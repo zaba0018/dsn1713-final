@@ -7,13 +7,14 @@
   <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
 </head>
 <body>
   <header class="sticky-top">
     <div class="bg-dark px-5">
       <nav class="navbar navbar-expand-lg navbar bg-dark border-body">
           <div class="container-fluid">
-            <a class="navbar-brand mx-auto" id="logo-desktop" href="#"><img src="images/amazon-logo-2.png" alt="amazon-logo" width="100"></a>
+            <a class="navbar-brand mx-auto" id="logo-desktop" href="index.html"><img src="images/amazon-logo-2.png" alt="amazon-logo" width="100"></a>
             <a class="navbar-brand" id="logo-mobile" href="index.html"><img src="images/amazon-logo-1.png" alt="amazon-logo" width="100"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -24,8 +25,10 @@
                 <button class="btn btn-dark px-5" type="submit"><img src="images/magnifying-glass-solid.svg" alt="search" width="30px"></button>
               </form>
               <div>
-                  <a href="#" class="px-4"><img src="images/cart-shopping-solid.svg" alt="my cart" width="40px"></a>
-                  <a href="#" class=""><img src="images/user-solid.svg" alt="my account" width="30px"></a>
+                  <a href="#" id="nav-icon" class="px-4"><img src="images/cart-shopping-solid.svg" alt="my cart" width="40px"></a>
+                  <a href="#" id="nav-icon" class=""><img src="images/user-solid.svg" alt="my account" width="30px"></a>
+                  <li><a class="dropdown-item text-info" href="account.html">My account</a></li>
+                  <li><a class="dropdown-item text-info" href="#">My cart</a></li>
               </div>
             </div>
           </div>
@@ -33,18 +36,320 @@
         </div>
   </header>
   <main>
-    <div>
-      <div id="product-image" class="Hero mx-5 container-fluid wrapper">
-        <div class="hero-text-account text mx-auto justify-content-center">
-          <h1 class="text-light text-center">Nintendo Switch™ Lite - Blue</h1>
+    <section id="Hero">
+      <div id="product-image" class="Hero mx-5 wrapper mt-5 pt-0">
+        <div class="hero-text-account">
+          <h1 class="text-light fs-2 pt-3">Nintendo Switch™ Lite - Blue</h1>
           </div>
           <div class="d-grid justify-content-end mt-5 me-5"> 
           </div>
-        </div>
+        </section>
+        <section id="VP" class="m-5">
+          <div class="row align-items-center d-flex">
+            <div class="d-flex mx-5 col-8">
+              <div id="variation" class="me-5 text-center">
+                <a href=""><img src="images/nintendo-switch-coral.jpg" alt="" class="rounded-circle border" id="colour"></a>
+                <p class="mt-2">Coral</p>
+              </div>
+              <div id="variation" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-yellow.jpg" alt="" class="rounded-circle border" id="colour"></a>
+                <p class="mt-2">Yellow</p>
+              </div>
+              <div id="variation" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-cyan.jpg" alt="" class="rounded-circle border" id="colour"></a>
+                <p class="mt-2">Turquoise</p>
+              </div>
+              <div id="variation" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-black.jpg" alt="" class="rounded-circle border" id="colour"></a>
+                <p class="mt-2">Black</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <h1>$259.96</h1>
+              <div>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex row"> 
+            <div class="col-4">
+              <p>Get a $35 Amazon.ca Gift Card instantly, plus up to 5% back for 6 months after approval.</p>
+              <p>Available at a lower price from other sellers that may not offer free Prime delivery.</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Quantity
+                </button>             
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><a class="dropdown-item" href="#">4</a></li>
+                  <li><a class="dropdown-item" href="#">5</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 d-grid gap-3 px-5">
+              <button type="button" class="btn btn-warning row">Add to cart</button>
+              <button type="button" class="btn btn-warning row">Check out</button>
+            </div>
+            <div class="col-4">
+              <ul class=" p-4" id="details">
+                <li>Sold by : Amazon.ca</li>
+                <li>Shipped by: Amazon.ca</li>
+                <li>Returns: Eligible for returns</li>
+                <li>Support: product support included</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="VP-mobile" class="container-fluid">
+          <div class="row align-items-center d-flex mx-5">
+            <div class="d-flex justify-content-evenly">
+              <h1>$259.96</h1>
+              <div>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div id="variation-mobile" class="me-5 text-center">
+                <a href=""><img src="images/nintendo-switch-coral.jpg" alt="" class="rounded-circle border" id="colour-mobile"></a>
+                <p class="mt-2">Coral</p>
+              </div>
+              <div id="variation-mobile" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-yellow.jpg" alt="" class="rounded-circle border" id="colour-mobile"></a>
+                <p class="mt-2">Yellow</p>
+              </div>
+              <div id="variation-mobile" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-blue.jpg" alt="" class="rounded-circle border" id="colour-mobile"></a>
+                <p class="mt-2">Blue</p>
+              </div>
+              <div id="variation-mobile" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-cyan.jpg" alt="" class="rounded-circle border" id="colour-mobile"></a>
+                <p class="mt-2">Turquoise</p>
+              </div>
+              <div id="variation-mobile" class="me-5 text-center">
+                <a href="#"><img src="images/nintendo-switch-black.jpg" alt="" class="rounded-circle border" id="colour-mobile"></a>
+                <p class="mt-2">Black</p>
+              </div>
+            </div>
+            <div class="d-flex row">
+              <div class="col-6">
+                <ul class=" p-4" id="details">
+                  <li>Sold by : Amazon.ca</li>
+                  <li>Shipped by: Amazon.ca</li>
+                  <li>Returns: Eligible for returns</li>
+                  <li>Support: product support included</li>
+                </ul>
+                <div>
+                  <p>Get a $35 Amazon.ca Gift Card instantly, plus up to 5% back for 6 months after approval.</p>
+                  <p>Available at a lower price from other sellers that may not offer free Prime delivery.</p>
+                </div>
+              </div>
+              <div class="col-6 d-grid gap-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Quantity
+                  </button>             
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">5</a></li>
+                  </ul>
+                </div>
+                <div class=" d-grid gap-3 px-3 mb-5">
+                  <button type="button" class="btn btn-warning row py-1">Add to cart</button>
+                  <button type="button" class="btn btn-warning row py-1">Check out</button>
+                </div>
+              </div>
+            </div>
+        </section>
+        <hr> </hr>
+        <section id="About" class=" container-fluid">
+          <div class="mx-5">
+            <H2>About this item</H2>
+            <div class="d-flex row "> 
+              <div class="col-6">
+                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+              <div class="col-6">
+                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section id="user-reviews" class=" container-fluid py-5">
+          <div class="mx-5">
+            <h2> User reviews</h2>
+            <div>
+              <div class="d-flex align-items-center row">
+                <a href="account.html" class="col-3"><img src="images/user-2.jpg" alt="" width="100rem" class="rounded-circle"></a>
+                <div class="col-9">
+                  <div class="d-flex justify-content-between">
+                    <h4>Ashley Dufresne</h4>
+                    <div>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                    </div>
+                  </div>
+                  <p>
+                    I was expecting the Lite to feel like a downgrade to the OLED, but it doesn't. It's a nice portable complement. The screen quality and motion blur is a bit worse, but games with lower frame rates are masked a bit by the blur.
+                  </p>
+                </div>
+
+              </div>
+              <hr> </hr>
+              <div class="d-flex align-items-center row">
+                <a href="account.html" class="col-3"><img src="images/user-1.jpg" alt="" width="100rem" class="rounded-circle"></a>
+                <div class="col-9">
+                  <div class="d-flex justify-content-between">
+                    <h4>Oliver Smith</h4>
+                    <div>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                      <span class="material-icons-outlined star">star</span>
+                    </div>
+                  </div>
+                  <p>
+                    I think the color is super cute and it works really well but storage wise is very limited and I had to delete a game so my other one could update, but sound wise is great and loud if you want it to be and when it arrived the condition was great and I am planning to buy a case and disc card but hope this helps!
+                  </p>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+        </section>
     </div>
   </main>
   <footer>
-
+    <div id="footer-destop">
+      <div class="bg-dark text pt-5">
+        <div class="d-flex row text-light mx-5"  id="footer-list">
+          <div class="col col-lg-5">
+            <h5>Amazon Payment Products</h5>
+            <ul class="px-0">
+              <li>Amazon.ca Rewards Mastercard</li>
+              <li>Shop with Points</li>
+              <li>Reload Your Balance</li>
+              <li>Amazon Currency Converter</li>
+              <li>Gift Cards</li>
+              <li>Amazon Cash</li>
+            </ul>
+          </div>
+          <div class="col col-lg-5">
+            <h5>Make Money With Us</h5>
+            <ul class="px-0">
+              <li>Sell on Amazon </li>
+              <li>Supply On Amazon</li>
+              <li>Become An Affiliate</li>
+              <li>Protect & Build Your Brand </li>
+              <li>Sell on Amazon Handmade</li>
+              <li>Advertise Your Products</li>
+              <li>Independently Publish with Us</li>
+              <li>Host an Amazon Hubs</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Get to Know Us</h5>
+            <ul class="px-0">
+              <li>Careers</li>
+              <li>Amazon and Our Planet</li>
+              <li>Modern Slavery Statement</li>
+              <li>Investor Relations</li>
+              <li>Press Releases</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-3 position-relative" id="footer-gray">
+        <div class="d-flex mx-5 footer-copyright-container">
+          <a href="#" class="logo position-absolute"><img src="images/amazon-logo-2.png" alt="" class="me-5"   width="100px"></a>
+          <div class="row" id="footer-text">
+            <ul class="d-flex text-center justify-content-center">
+              <li class="pe-4"><a href="#">Conditions of Use</a></li>
+              <li class="pe-4"><a href="#">Privacy Notice</a></li>
+              <li class="pe-4"><a href="#">Interest-Based Ads</a></li>
+            </ul>
+            <p>© 1996-2024, Amazon.com, Inc. or its affiliate</p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <div id="footer-mobile">
+      <div class="bg-dark mt-5 py-5">
+        <div class=" text-light mx-5"  id="footer-list">
+          <div class="col col-lg-5 my-5">
+            <h5 class="fs-2">Amazon Payment Products</h5>
+            <ul class="px-0 fs-3">
+              <li>Amazon.ca Rewards Mastercard</li>
+              <li>Shop with Points</li>
+              <li>Reload Your Balance</li>
+              <li>Amazon Currency Converter</li>
+              <li>Gift Cards</li>
+              <li>Amazon Cash</li>
+            </ul>
+          </div>
+          <div class="col col-lg-5 my-5">
+            <h5 class="fs-2">Make Money With Us</h5>
+            <ul class="px-0 fs-3">
+              <li>Sell on Amazon </li>
+              <li>Supply On Amazon</li>
+              <li>Become An Affiliate</li>
+              <li>Protect & Build Your Brand </li>
+              <li>Sell on Amazon Handmade</li>
+              <li>Advertise Your Products</li>
+              <li>Independently Publish with Us</li>
+              <li>Host an Amazon Hubs</li>
+            </ul>
+          </div>
+          <div class="col my-5">
+            <h5 class="fs-2">Get to Know Us</h5>
+            <ul class="px-0 fs-3">
+              <li>Careers</li>
+              <li>Amazon and Our Planet</li>
+              <li>Modern Slavery Statement</li>
+              <li>Investor Relations</li>
+              <li>Press Releases</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pt-3 px-auto" id="footer-gray-mobile">
+        <div class="footer-copyright-container mx-4 d-flex row">
+            <a href="" class="col-3"><img src="images/amazon-logo-1.png" alt="" width="100%"></a>
+            <ul class="text-center col-9" id="footer-list">
+              <li class=""><a href="#">Conditions of Use</a></li>
+              <li class=""><a href="#">Privacy Notice</a></li>
+              <li class=""><a href="#">Interest-Based Ads</a></li>
+              <li><p>© 1996-2024, Amazon.com, Inc. or its affiliate</p></li>
+            </ul>
+          </div>
+  
+        </div>
+    </div>
   </footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

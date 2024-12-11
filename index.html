@@ -6,13 +6,16 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <header class="sticky-top">
         <div class="px-5" id="navbar-container">
-            <nav class="navbar navbar-expand-lg navbar border-body">
+            <nav class="navbar navbar-expand-lg navbar border-body ">
                 <div class="container-fluid">
                   <a class="navbar-brand mx-auto" id="logo-desktop" href="#"><img src="images/amazon-logo-2.png" alt="amazon-logo" width="100"></a>
                   <a class="navbar-brand " id="logo-mobile" href="#"><img src="images/amazon-logo-1.png" alt="amazon-logo" width="100"></a>
@@ -25,8 +28,10 @@
                       <button class="btn btn-dark px-5" type="submit"><img src="images/magnifying-glass-solid.svg" alt="search" width="30px"></button>
                     </form>
                     <div>
-                        <a href="#" class="px-4"><img src="images/cart-shopping-solid.svg" alt="my cart" width="40px"></a>
-                        <a href="account.html" class=""><img src="images/user-solid.svg" alt="my account" width="30px"></a>
+                        <a href="#" id="nav-icon" class="px-4"><img src="images/cart-shopping-solid.svg" alt="my cart" width="40px"></a>
+                        <a href="account.html" id="nav-icon"><img src="images/user-solid.svg" alt="my account" width="30px"></a>
+                        <li><a class="dropdown-item text-info" href="account.html">My account</a></li>
+                        <li><a class="dropdown-item text-info" href="#">My cart</a></li>
                     </div>
                   </div>
                 </div>
@@ -90,15 +95,15 @@
       </section>
       <div class="B-T-N container-fluid row text-center my-5">
       <div class="col">
-        <h3 class="mb-3">Best Sellers</h3>
+        <h3 class="mb-3 mt-5 animate__bounce">Best Sellers</h3>
         <a href="#"><img src="images/amazon-prime-day.jpg" alt="Best sellers" height="250" width="250" class="rounded-circle object-fit-cover"></a>
       </div>
       <div class="col">
-        <h3 class="mb-3">Today's Deals</h3>
+        <h3 class="mb-3 mt-5 animate__bounce">Today's Deals</h3>
         <a href="#"><img src="images/discount-sign-image.jpg" alt="Today's deal" height="250" class="rounded-circle object-fit-cover"></a>
         </div>
       <div class="col">
-        <h3 class="mb-3">New Arrivals</h3>
+        <h3 class="mb-3 mt-5 animate__bounce">New Arrivals</h3>
         <a href="#"><img src="images/open-box-image.jpg" alt="New Arrivals" height="250" class="rounded-circle object-fit-cover"></a>
       </div>
       </div>
@@ -118,9 +123,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$259.96</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
                   </div>
 
@@ -134,9 +139,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$109.98</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
 
                   </div>
@@ -150,9 +155,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$549.99</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
                   </div>
                 </div>
@@ -169,9 +174,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$64.99</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
                   </div>
                 </div>
@@ -184,9 +189,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$89.98</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
 
                   </div>
@@ -200,9 +205,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$279.95</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
                   </div>
                 </div>
@@ -219,9 +224,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$66.08</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
                   </div>
 
@@ -235,9 +240,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$799.00</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
 
                   </div>
@@ -251,9 +256,9 @@
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
                     <span class="material-icons-outlined star">star</span>
-                    <div class="d-flex container-fluid justify-content-between px-3">
+                    <div class="d-flex container-fluid justify-content-between px-0">
                       <p id="price">$159.99</p>
-                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
                     </div>
                   </div>
                 </div>
@@ -272,70 +277,73 @@
         </div>
       </div>
       <section  id="recommendations-mobile" class="container-fluid bg-dark">
-        <div class=" py-3 mb-1">
-          <h2 class="mb-4 text-light"> Recommended for you</h2>
-                <div class="carousel-item active">
-                  <div class="card col px-0" style="width: 18rem;">
-                    <a href="product-page.html"><img src="images/cat-litter-box-3.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <p class="card-text">Litter-Robot 3 Connect by Whisker</p>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <div class="d-flex container-fluid justify-content-between px-3">
-                        <p id="price" class="">$799.00</p>
-                        <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
-                      </div>
-        
+        <div class=" py-3 mb-1 d-grid">
+          <h2 class="mb-4 mx-4 text-light"> Recommended for you</h2>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card col mx-auto" style="width: 25rem;">
+                  <a href="product-page.html"><img src="images/nintendo-switch-blue.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Nintendo Switch™ Lite - Blue</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$259.96</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card col px-0" style="width: 18rem;">
-                    <a href="product-page.html"><img src="images/cat-litter-box-3.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <p class="card-text">Litter-Robot 3 Connect by Whisker</p>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <div class="d-flex container-fluid justify-content-between px-3">
-                        <p id="price" class="">$799.00</p>
-                        <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
-                      </div>
-        
-                    </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card col px-0" style="width: 18rem;">
-                    <a href="product-page.html"><img src="images/cat-litter-box-3.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <p class="card-text">Litter-Robot 3 Connect by Whisker</p>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <span class="material-icons-outlined star">star</span>
-                      <div class="d-flex container-fluid justify-content-between px-3">
-                        <p id="price" class="">$799.00</p>
-                        <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
-                      </div>
-        
-                    </div>
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item">
+                <div class="card col px-0 mx-auto" style="width: 25rem;">
+                  <a href="product-page.html"><img src="images/stanley-cup.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Stanley Quencher H2.0</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$46.00</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="carousel-item">
+                <div class="card col px-0 mx-auto" style="width: 25rem;">
+                  <a href="product-page.html"><img src="images/black-dumbells.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">CITY 1 Premium Pair of 2 Hex Dumbbells
+                    </p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$89.98</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+          <a href="#" id="see-more"> see more </a>
         </div>
       </section>
      
@@ -352,9 +360,9 @@
               <span class="material-icons-outlined star">star</span>
               <span class="material-icons-outlined star">star</span>
               <span class="material-icons-outlined star">star</span>
-              <div class="d-flex container-fluid justify-content-between px-3">
+              <div class="d-flex container-fluid justify-content-between px-0">
                 <p id="price">$89.98</p>
-                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
               </div>
             </div>
           </div>
@@ -367,9 +375,9 @@
               <span class="material-icons-outlined star">star</span>
               <span class="material-icons-outlined star">star</span>
               <span class="material-icons-outlined star">star</span>
-              <div class="d-flex container-fluid justify-content-between px-3">
+              <div class="d-flex container-fluid justify-content-between px-0">
                 <p id="price" class="">$799.00</p>
-                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
               </div>
 
             </div>
@@ -383,9 +391,9 @@
               <span class="material-icons-outlined star">star</span>
               <span class="material-icons-outlined star">star</span>
               <span class="material-icons-outlined star">star</span>
-              <div class="d-flex container-fluid justify-content-between px-3">
+              <div class="d-flex container-fluid justify-content-between px-0">
                 <p id="price">$259.99</p>
-                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
               </div>
         </div>
         </div>
@@ -400,9 +408,9 @@
             <span class="material-icons-outlined star">star</span>
             <span class="material-icons-outlined star">star</span>
             <span class="material-icons-outlined star">star</span>
-            <div class="d-flex container-fluid justify-content-between px-3">
+            <div class="d-flex container-fluid justify-content-between px-0">
               <p id="price">$109.98</p>
-              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
             </div>
           </div>
         </div>
@@ -415,9 +423,9 @@
             <span class="material-icons-outlined star">star</span>
             <span class="material-icons-outlined star">star</span>
             <span class="material-icons-outlined star">star</span>
-            <div class="d-flex container-fluid justify-content-between px-3">
+            <div class="d-flex container-fluid justify-content-between px-0">
               <p id="price">$549.99</p>
-              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
             </div>
 
           </div>
@@ -431,68 +439,192 @@
             <span class="material-icons-outlined star" id="star">star</span>
             <span class="material-icons-outlined star" id="star">star</span>
             <span class="material-icons-outlined star" id="star">star</span>
-            <div class="d-flex container-fluid justify-content-between px-3">
+            <div class="d-flex container-fluid justify-content-between px-0">
               <p id="price">$279.95</p>
-              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+              <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="45rem" class="cart-icon"></a>
             </div>
       </div>
       </div>
      </div>
       </div>
+      <section  id="viewed-mobile" class="container-fluid">
+        <div class=" py-3 mb-1 d-grid">
+          <h2 class="mb-4 mx-4"> Recently viewed</h2>
+          <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card col mx-auto" style="width: 25rem;">
+                  <a href="product-page.html"><img src="images/beat-headphones.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">Beats Studio ProBluetooth Noise Cancelling Headphones</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$378.95</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col px-0 mx-auto" style="width: 25rem;">
+                  <a href="product-page.html"><img src="images/coffee-machine.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">PHILIPS EP2330/10 1.8 Liters Espresso Machine</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$549.99</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col px-0 mx-auto" style="width: 25rem;">
+                  <a href="product-page.html"><img src="images/mini-fridge.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <p class="card-text">AstroAI Mini Fridge, 4 Liter</p>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <span class="material-icons-outlined star">star</span>
+                    <div class="d-flex container-fluid justify-content-between px-3">
+                      <p id="price">$64.99</p>
+                      <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <a href="#" id="see-more"> see more </a>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="bg-dark mt-5 text pt-5">
-        <div class="d-flex row text-light mx-5"  id="footer-list">
-          <div class="col col-lg-5">
-            <h5>Amazon Payment Products</h5>
-            <ul class="px-0">
-              <li>Amazon.ca Rewards Mastercard</li>
-              <li>Shop with Points</li>
-              <li>Reload Your Balance</li>
-              <li>Amazon Currency Converter</li>
-              <li>Gift Cards</li>
-              <li>Amazon Cash</li>
-            </ul>
+      <div id="footer-destop">
+        <div class="bg-dark mt-5 text pt-5">
+          <div class="d-flex row text-light mx-5"  id="footer-list">
+            <div class="col col-lg-5">
+              <h5>Amazon Payment Products</h5>
+              <ul class="px-0">
+                <li>Amazon.ca Rewards Mastercard</li>
+                <li>Shop with Points</li>
+                <li>Reload Your Balance</li>
+                <li>Amazon Currency Converter</li>
+                <li>Gift Cards</li>
+                <li>Amazon Cash</li>
+              </ul>
+            </div>
+            <div class="col col-lg-5">
+              <h5>Make Money With Us</h5>
+              <ul class="px-0">
+                <li>Sell on Amazon </li>
+                <li>Supply On Amazon</li>
+                <li>Become An Affiliate</li>
+                <li>Protect & Build Your Brand </li>
+                <li>Sell on Amazon Handmade</li>
+                <li>Advertise Your Products</li>
+                <li>Independently Publish with Us</li>
+                <li>Host an Amazon Hubs</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5>Get to Know Us</h5>
+              <ul class="px-0">
+                <li>Careers</li>
+                <li>Amazon and Our Planet</li>
+                <li>Modern Slavery Statement</li>
+                <li>Investor Relations</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+              </ul>
+            </div>
           </div>
-          <div class="col col-lg-5">
-            <h5>Make Money With Us</h5>
-            <ul class="px-0">
-              <li>Sell on Amazon </li>
-              <li>Supply On Amazon</li>
-              <li>Become An Affiliate</li>
-              <li>Protect & Build Your Brand </li>
-              <li>Sell on Amazon Handmade</li>
-              <li>Advertise Your Products</li>
-              <li>Independently Publish with Us</li>
-              <li>Host an Amazon Hubs</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Get to Know Us</h5>
-            <ul class="px-0">
-              <li>Careers</li>
-              <li>Amazon and Our Planet</li>
-              <li>Modern Slavery Statement</li>
-              <li>Investor Relations</li>
-              <li>Press Releases</li>
-              <li>Amazon Science</li>
-            </ul>
+        </div>
+        <div class="text-center pt-3 position-relative" id="footer-gray">
+          <div class="d-flex mx-5 footer-copyright-container">
+            <a href="#" class="logo position-absolute"><img src="images/amazon-logo-2.png" alt="" class="me-5"   width="100px"></a>
+            <div class="row" id="footer-text">
+              <ul class="d-flex text-center justify-content-center">
+                <li class="pe-4"><a href="#">Conditions of Use</a></li>
+                <li class="pe-4"><a href="#">Privacy Notice</a></li>
+                <li class="pe-4"><a href="#">Interest-Based Ads</a></li>
+              </ul>
+              <p>© 1996-2024, Amazon.com, Inc. or its affiliate</p>
+            </div>
+    
           </div>
         </div>
       </div>
-      <div class="text-center pt-3 position-relative" id="footer-gray">
-        <div class="d-flex mx-5 footer-copyright-container">
-          <a href="#" class="logo position-absolute"><img src="images/amazon-logo-2.png" alt="" class="me-5"   width="100px"></a>
-          <div class="row" id="footer-text">
-            <ul class="d-flex text-center justify-content-center">
-              <li class="pe-4"><a href="#">Conditions of Use</a></li>
-              <li class="pe-4"><a href="#">Privacy Notice</a></li>
-              <li class="pe-4"><a href="#">Interest-Based Ads</a></li>
-            </ul>
-            <p>© 1996-2024, Amazon.com, Inc. or its affiliate</p>
+      <div id="footer-mobile">
+        <div class="bg-dark mt-5 py-5">
+          <div class=" text-light mx-5"  id="footer-list">
+            <div class="col col-lg-5 my-5">
+              <h5 class="fs-2">Amazon Payment Products</h5>
+              <ul class="px-0 fs-3">
+                <li>Amazon.ca Rewards Mastercard</li>
+                <li>Shop with Points</li>
+                <li>Reload Your Balance</li>
+                <li>Amazon Currency Converter</li>
+                <li>Gift Cards</li>
+                <li>Amazon Cash</li>
+              </ul>
+            </div>
+            <div class="col col-lg-5 my-5">
+              <h5 class="fs-2">Make Money With Us</h5>
+              <ul class="px-0 fs-3">
+                <li>Sell on Amazon </li>
+                <li>Supply On Amazon</li>
+                <li>Become An Affiliate</li>
+                <li>Protect & Build Your Brand </li>
+                <li>Sell on Amazon Handmade</li>
+                <li>Advertise Your Products</li>
+                <li>Independently Publish with Us</li>
+                <li>Host an Amazon Hubs</li>
+              </ul>
+            </div>
+            <div class="col my-5">
+              <h5 class="fs-2">Get to Know Us</h5>
+              <ul class="px-0 fs-3">
+                <li>Careers</li>
+                <li>Amazon and Our Planet</li>
+                <li>Modern Slavery Statement</li>
+                <li>Investor Relations</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+              </ul>
+            </div>
           </div>
-  
         </div>
+        <div class="pt-3 px-auto" id="footer-gray-mobile">
+          <div class="footer-copyright-container mx-4 d-flex row">
+              <a href="" class="col-3"><img src="images/amazon-logo-1.png" alt="" width="100%"></a>
+              <ul class="text-center col-9" id="footer-list">
+                <li class=""><a href="#">Conditions of Use</a></li>
+                <li class=""><a href="#">Privacy Notice</a></li>
+                <li class=""><a href="#">Interest-Based Ads</a></li>
+                <li><p>© 1996-2024, Amazon.com, Inc. or its affiliate</p></li>
+              </ul>
+            </div>
+    
+          </div>
       </div>
     </footer>
 
