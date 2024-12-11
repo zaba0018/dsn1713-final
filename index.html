@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <header>
+    <header class="sticky-top">
         <div class="px-5" id="navbar-container">
             <nav class="navbar navbar-expand-lg navbar border-body">
                 <div class="container-fluid">
-                  <a class="navbar-brand mx-auto" href="#"><img src="images/amazon-logo-2.png" alt="amazon-logo" width="100"></a>
+                  <a class="navbar-brand mx-auto" id="logo-desktop" href="#"><img src="images/amazon-logo-2.png" alt="amazon-logo" width="100"></a>
+                  <a class="navbar-brand " id="logo-mobile" href="#"><img src="images/amazon-logo-1.png" alt="amazon-logo" width="100"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -68,7 +69,25 @@
             </div>
           </div>
     </div>
-    </div>
+      </div>
+      <section id="Categories-dropdown">
+        <div class="">
+          <div class="btn-group container fluid mx-0 row d-flex">
+            <button class="btn dropdown-toggle m-0 px-5 col-12" type="button" id="Button-drop" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="#">Fashion</a></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+              <li><a class="dropdown-item" href="#">Sports</a></li>
+              <li><a class="dropdown-item" href="#">Video games</a></li>
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Pet supplies</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <div class="B-T-N container-fluid row text-center my-5">
       <div class="col">
         <h3 class="mb-3">Best Sellers</h3>
@@ -252,6 +271,33 @@
         </div>
         </div>
       </div>
+      <section  id="recommendations-mobile" class="container-fluid bg-dark">
+        <div class=" py-3 mb-1">
+          <h2 class="mb-4 text-light"> Recommended for you</h2>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/nintendo-switch-black.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/nintendo-switch-blue.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/nintendo-switch-cyan.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+     
       <div id="viewed" class="mx-5">
         <h2 class="ms-5 ps-3 mb-4">Recently viewed</h2>
         <div class="d-flex row container-fluid mb-5">
@@ -339,11 +385,11 @@
           <a href="product-page.html"><img src="images/beat-headphones.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body">
             <p class="card-text">Beats Studio ProBluetooth Noise Cancelling Headphonesx</p>
-            <span class="material-icons-outlined star">star</span>
-            <span class="material-icons-outlined star">star</span>
-            <span class="material-icons-outlined star">star</span>
-            <span class="material-icons-outlined star">star</span>
-            <span class="material-icons-outlined star">star</span>
+            <span class="material-icons-outlined star" id="star">star</span>
+            <span class="material-icons-outlined star" id="star">star</span>
+            <span class="material-icons-outlined star" id="star">star</span>
+            <span class="material-icons-outlined star" id="star">star</span>
+            <span class="material-icons-outlined star" id="star">star</span>
             <div class="d-flex container-fluid justify-content-between px-3">
               <p id="price">$279.95</p>
               <a href="#"><img src="images/cart-plus-solid.svg" alt="" width="70px"></a>
